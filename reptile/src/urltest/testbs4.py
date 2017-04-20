@@ -2,7 +2,7 @@
 '''
 Created on 2017年4月19日
 
-@author: liuyaqing
+@author: loye66
 '''
 from bs4 import BeautifulSoup
 from pip.index import Link

@@ -2,7 +2,7 @@
 '''
 Created on 2017年4月19日
 
-@author: liuyaqing
+@author: loye66
 '''
 
 import urllib2

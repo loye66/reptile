@@ -1,3 +1,8 @@
 eclipse.preferences.version=1
+encoding//src/reptile/html_downloader.py=utf8
+encoding//src/reptile/html_outputer.py=utf8
+encoding//src/reptile/html_parser.py=utf8
+encoding//src/reptile/spider_main.py=utf8
+encoding//src/reptile/url_manager.py=utf8
 encoding//src/urltest/testbs4.py=utf-8
 encoding//src/urltest/urllib2test.py=utf-8
