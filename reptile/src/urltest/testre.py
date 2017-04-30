@@ -46,7 +46,7 @@ import re
 
 line = "Cats are smarter than dogs";
 
-searchObj = re.search( r'(.*) are (.*?) (.*).*', line, re.M|re.I)
+searchObj = re.search( r'(.*?) are (.*?) (.*).*', line, re.M|re.I)
 
 if searchObj:
    print "searchObj.group() : ", searchObj.group()
@@ -54,6 +54,12 @@ if searchObj:
    print "searchObj.group(3) : ", searchObj.group(3)
 else:
    print "Nothing found!!"
+   
+b='210.34.6.89'
+c=re.compile(r"^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$")
+d=c.findall(b)
+print d
+
 
 '''s = 'good work, man!'
 ss=s.split('good work')
