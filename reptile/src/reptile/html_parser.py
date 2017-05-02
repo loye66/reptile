@@ -4,7 +4,7 @@ Created on 2017年4月20日
 
 @author: loye66
 '''
-from urltest.testbs4 import soup
+from urlstudyteststbs4 import soup
 from bs4 import BeautifulSoup
 import new
 import re

@@ -4,7 +4,7 @@ Created on 2017年4月20日
 
 @author: loye66
 '''
-from urltest.urllib2test import url
+from urlstudytestllib2test import url
 
 
 class UrlManager(object):
