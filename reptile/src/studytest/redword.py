@@ -8,6 +8,8 @@ from PIL import Image,ImageDraw,ImageFont
 from email.mime import image
 import os
 
+#你的 QQ 头像（或者微博头像）右上角加上红色的数字，类似于微信未读信息数量那种提示效果
+
 #切换到工作目录
 os.chdir(r"E:\pythonwork")
 os.remove("susu2.png")

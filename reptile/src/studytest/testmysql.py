@@ -9,6 +9,8 @@ import random
 import string
 from macpath import join
 
+#将 0001 题生成的 200 个激活码（或者优惠券）保存到 MySQL 关系型数据库中
+
 #创建优惠券列表
 list_ActivationCode=[]
 
@@ -22,6 +24,7 @@ def get_ActivationCode():
     #分行输出
     for j in range(200):
         print "第",j+1,"个：",list_ActivationCode[j]
+        
 def insertdata():
     get_ActivationCode()#调用get_ActivationCode()
     try:  
@@ -37,7 +40,7 @@ def insertdata():
         cur.execute("create table ActivationCode(id int,code varchar(50))")
         #插入数据
         for m in range(len(list_ActivationCode)):
-            cur.execute(r'insert into ActivationCode values(%s,%s)',(m,list_ActivationCode[m]))
+            cur.execute('insert into ActivationCode values(%s,%s)',(m,list_ActivationCode[m]))
         n=cur.execute("select*from ActivationCode")
         print n
         #提交到数据库执行

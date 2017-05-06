@@ -44,7 +44,7 @@ print fx
 fp.close()
 r1=re.compile(r'inet addr')
 fn=''
-for i in range(0,12):
+for i in range(len(fx)):
     if r1.match(fx[i]):
         fn=fn+fx[i]
         print fn

@@ -8,11 +8,12 @@ import random
 import string
 from macpath import join
 
-#创建优惠券列表
-list_ActivationCode=[]
+#使用 Python 如何生成 200 个激活码
 
 #实现获取200优惠券的函数
 def get_ActivationCode():
+    #创建优惠券列表
+    list_ActivationCode=[]
     str=string.letters+string.digits
     for i in range(200):#200次循环
         ActivationCode=''.join(random.sample(str,16))#创建优惠码，使用python join（）方法
