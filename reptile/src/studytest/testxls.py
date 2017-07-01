@@ -29,7 +29,7 @@ def getdata():
 #写入xls，并读取文件
 def writedata():      
     stu=getdata()
-    wb = xlwt.Workbook(encoding='gb2312')#Windows中文编码采用gb2312
+    wb = xlwt.Workbook(encoding='gbk')
     sheet = wb.add_sheet('test')#sheet的名称为test    
     stu1=list(stu)
     print stu1

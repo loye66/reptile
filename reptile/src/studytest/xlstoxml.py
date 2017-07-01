@@ -21,10 +21,11 @@ def rxls():
     sh=rd.sheet_by_name('test')
     row=sh.nrows
     col=sh.ncols
+    rows=map(lambda x: x, sh.get_rows())
+    print rows
     for i in range(0,row):
         row_data=sh.row_values(i)
-        stu=[row_data[0],row_data[1:]]#分割字符串使排序和内容分开
-        stulst.append(stu)
+        stulst.append(row_data)
     return stulst
 
 #写入xml文件
@@ -45,7 +46,7 @@ def wxml():
         n= u'\u738b\u4e94'
         print i[1][0]
         print n.encode('utf-8')
-        student_text = doc.createTextNode(i[1][0])
+        student_text = doc.createTextNode(str(i))
         #插入数据
         student.appendChild(student_text)
     #加入根节点

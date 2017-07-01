@@ -23,8 +23,27 @@ print row,col
 for m in range(0,row):
     row_data=sh.row_values(m)
     rowlst.append(row_data)
-print rowlst
+for i in range(0,len(rowlst)):
+    for j in range(0,len(row_data)):
+        print rowlst[i][j]
 
 
+class Fib(object):
+    def __init__(self, num):
+        a, b, L = 0, 1, []
+        for i in range(num/2):
+            L.append(a)
+            L.append(b)
+            a = a + b
+            b = a + b
+        self.numbers = L
+    def __str__(self):
+        return str(self.numbers)
 
-    
+
+    def __len__(self):
+        return len(self.numbers)
+
+f = Fib(10)
+print f
+print len(f)
